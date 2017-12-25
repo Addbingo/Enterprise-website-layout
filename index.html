@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>企业网站</title>
+	<link rel="stylesheet" href="css/mian.css" type="text/css">
+
+	<script src="js/setHomeSetFav.js" type="text/javascript" charset="gb2312"></script>
+	<script src="js/myfocus-2.0.1.min.js" type=text/javascript></script><!-- 库文件 -->
+	<sript src="js/mf-pattern/mF_YSlider.js" type="text/javascript"></sript><!-- 风格 -->
+	<link rel="stylesheet" href="js/mf-pattern/mF_YSlider.css" type="text/css"><!-- 样式 -->
+	<script type="text/javascript">
+		myFocus.set({id:'picBox'});
+	</script>
+
+	
+</head>
+<body>
+	<div class="top">
+		<div class="top_content">
+		    <li><a href="#"> 联系我们</a></li>
+			<li><a href="#" onclick="AddFavorite(window.location,document.title)">加入收藏</a></li>
+			<li><a href="#" onclick="SetHome(window.location)">设为首页</a></li>
+		</div>
+	</div><!-- top结束 -->
+	<div class="wrap">
+		<div class="logo">
+			<div class="logo_left">
+				<img src="images/logo.jpg" alt="慕课网">
+			</div>
+			<div class="logo_right">
+				<img src="images/tel.jpg" alt="服务热线"><span class="tel">24小时服务热线：2121231312 </span>
+			</div>
+		</div><!-- logo -->
+		<div class="nav">
+			<div class="nav_left"></div>
+			<div class="nav_mid">
+				<div class="nav_mid_left">
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="list.html">关于慕课</a></li>
+						<li><a href="list.html">新闻动态</a></li>
+						<li><a href="list.html">课程中心</a></li>
+						<li><a href="list.html">在线课程</a></li>
+						<li><a href="list.html">人才招聘</a></li>
+					</ul>
+				</div>
+				<div class="nav_mid_rght">
+					<form action="" method="post">
+						<input type="text" class="search_text"/>
+					</form>
+				</div>
+			</div>
+			<div class="nav_right"></div>
+		</div><!-- nav -->
+
+		 <div class="ad" id="picBox">
+		    <div class="loading"><img src="images/loading.gif" alt="加载中。。。"></div>
+		    <div class="pic">
+		    	<ul>
+					<li><img src="images/ad2.jpg" alt=""></li>
+					<li><img src="images/ad3.jpg" alt=""></li>
+					<li><img src="images/ad4.jpg" alt=""></li>
+			    </ul>
+		    </div>
+		</div><!-- ad -->
+
+		<div class="main">
+			<div class="news">
+				<div class="title">
+					<h2 class="title_left">新闻中心</h2><span class="title_right"><a href="list.html" target="_Blank"> More&gt;&gt;</a></span>
+				</div>
+				<div class="pic_news">
+					<img src="images/news.jpg">
+					<h2 ><a href="news.html">520表白墙</a></h2>
+					<p>活动时间：5.20-5.21<br>获奖公布时间：5.23<br><a href="news.html">Learn More &gt;&gt;<br></a></p>
+				</div>
+				<div class="news_list">
+					<ul>
+					    <li><span>2014-06-01</span><a href="news.html">【第三段】撒旦撒胜多负少旦</a> </li>
+					    <li><span>2014-06-01</span><a href="news.html">【程序秩】序中带的写</a></li>
+						<li><span>2014-05-30</span><a href="news.html">【风格很干净】封发生</a></li>
+						<li><span>2014-05-28</span><a href="news.html" title="aa">【地方法】规带的和</a></li>
+					</ul>
+				</div>
+			</div><!-- news -->
+			<div class="course">
+				<div class="title">
+					<h2 class="title_left">课程中心</h2><span class="title_right"><a href="news.html">More&gt&gt</a></span>
+				</div>
+				<div class="course_pic">
+					<img src="images/css.jpg" ><h2><a href="news.html">圆角进化论</a></h2><p>css圆角的实现，经历了喜多发展阶段，的交话费几十我们闲杂这样看到的样子拍图片sdf发送到方法电放费dsfsdfsdf似懂非懂是sdfsdfsdf 鼎折覆餗反而更哈哈</p>
+				</div>
+				<div class="course_type">
+					<ul>
+						<li>PHP开发</li>
+						<li>前端开发</li>
+						<li>JAVA开发</li>
+						<li>Android开发</li>
+					</ul>
+				</div>
+			</div><!-- course -->
+			<div class="sidebar">
+				<div class="video">
+					<div class="title">
+						<h2 class="title_left">媒体聚焦</h2>
+					</div>
+					<div class="video_content">
+						<embed src='http://player.youku.com/player.php/sid/XMTQ4MjYyODcyNA==/v.swf' allowFullScreen='true' quality='high' width='230' height='150' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+					</div>
+				</div>
+				<div class="sidebar_ad">
+					<img src="images/app.jpg" >
+				</div>
+			</div><!-- sidebar -->
+		</div><!-- main -->	
+	</div><!-- wrap -->
+
+	<div class="copyright">
+		<div class="copy_content">
+			<ul>
+				<li><a href="#">关于</a>
+				    <ul>
+				    	<li><a href="#">品牌故事</a></li>
+				    	<li><a href="#">练习我们</a></li>
+				    	<li><a href="#">加入我们</a></li>
+				    	<li><a href="#">版权声明</a></li>
+				    </ul>
+				</li>
+				<li><a href="#">课程</a>
+				    <ul>
+				        <li><a href="#">PHP开发</a></li>
+				    	<li><a href="#">前端开发</a></li>
+				    	<li><a href="#">JAVA开发</a></li>
+				    	<li><a href="#">Android开发</a></li>
+					</ul>
+				</li>
+				<li><a href="#">留言</a>
+				    <ul>
+				        <li><a href="#">新浪微博</a></li>
+				    	<li><a href="#">腾讯视频</a></li>
+				    	<li><a href="#">企业微信</a></li>
+				    	<li><a href="#">QQ空间</a></li>
+					</ul>
+				</li>
+				<li><a href="#">关注</a>
+				    <ul>
+						<li><a href="#">意见反馈</a></li>
+						<li><a href="#">问题留言</a></li>
+						<li><a href="#">媒体联络</a></li>
+						<li><a href="#">在线客服</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><img src="images/weixin.png" >微信关注</a>
+				    <ul>
+						<li><img src="images/qrcode.jpg" ></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+</body>
+</html>
